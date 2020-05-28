@@ -1,12 +1,15 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import AddKeyPair from './AddKeyPair';
 
-const Header = ({title}) => {
+const Header = ({title, addKeyPair}) => {
   return (
     <View style={styles.header}>
       <Text style={styles.text}>{title}</Text>
-      <Icon name="plus" size={30} color="green" />
+      <TouchableOpacity onPress={() => addKeyPair()}>
+        <Icon name="plus" size={30} color="green" />
+      </TouchableOpacity>
     </View>
   );
 };
