@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, FlatList} from 'react-native';
 import {v4 as uuidv4} from 'uuid';
 import Header from './components/Header';
 import ListItem from './components/ListItem'
-import {wallet} from 'eth-wallet-light'
+//import {wallet} from 'eth-wallet-light'
 
 const App = () => {
   const [keyPair, getKeyPair] = useState([
