@@ -6,7 +6,7 @@ In its final state, this application will store and generate a collection of the
 ## Installation
 ```
 npm i
-npm react-native run-android
+react-native run-android
 ```
 
 ## Todo
